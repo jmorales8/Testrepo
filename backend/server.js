@@ -1,8 +1,10 @@
 import express from 'express';
+import cors from 'cors';
 
 const app = express();
 const PORT = 3000;
 
+app.use(cors()); // Allow all origins by default
 app.use(express.json());
 
 app.get('/bruh', (req, res) => {
