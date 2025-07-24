@@ -3,7 +3,7 @@ async function fetchData() {
   try {
     // catch the response as data, not it isnt in json form yet
     const response = await fetch('https://pokeapi.co/api/v2/pokemon/ditto');
-    // console.log("this is a response: ", response)
+    console.log("this is a response: ", response)
 
     // if this console.log is uncomented, then it will reult in an error because 
     // console.log("this is a promise that wont be fulffiled because it wont the request wont have time to finish:", await response.json())
