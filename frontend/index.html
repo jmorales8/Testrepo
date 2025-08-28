@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Fetch Example</title>
+  <meta charset="UTF-8" />
+  <title>JS Module Example</title>
 </head>
 <body>
+  <h1>Greeting:</h1>
+  <div id="output"></div>
 
-<button onclick="fetchData()">Get Data</button>
-<div id="output"></div>
-
-<!-- Link to your external JS file -->
-<script src="script.js"></script>
-
+  <!-- Load main.js as a module -->
+  <script type="module" src="./script.js"></script>
 </body>
 </html>
